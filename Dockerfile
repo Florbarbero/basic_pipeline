@@ -19,8 +19,8 @@ COPY requirements.txt .
 COPY script.py .
 COPY sample.fasta .
 
-# Instalar dependencias de Python
-RUN pip3 install --no-cache-dir -r requirements.txt
+# Instalar dependencias de Python (forzando instalación con pip)
+RUN pip3 install --no-cache-dir --break-system-packages -r requirements.txt
 
 # Comando por defecto al ejecutar el contenedor
 CMD ["python3", "script.py"]

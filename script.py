@@ -2,8 +2,8 @@
 from Bio import SeqIO
 import os
 
-# Ruta al archivo FASTA (puede ser relativa o absoluta)
-fasta_file = r"G:\Mi unidad\Esp. Bioinformática\13- Diseño de Pipelines Bioinformáticos Escalables Automatización, Contenedores y Nube\bio-nf-core\workflows\basic_pipeline\sample.fasta"
+# Ruta al archivo FASTA (relativa al script)
+fasta_file = "sample.fasta"
 
 # Debug: verificar que Python puede acceder al archivo
 if os.path.exists(fasta_file):
